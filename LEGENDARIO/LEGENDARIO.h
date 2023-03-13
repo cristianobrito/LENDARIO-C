@@ -13,5 +13,10 @@ void EX00_2(void);               // FAZENDO UMA CONTA SIMPLES
 void EX00_3(void);               // ENTENDENDO A FUNÇÃO PUTS
 void EX00_4(void);               // EXIBINDO VALORES \'%%d' USAMOS %% PARA EXIBIR (%) E (\) PARA EXIBIR CARACTERES ESPECIAIS
 void EX00_5(void);               // DEFININDO E USANDO UMA CONSTANTE
+void EX00_6();                   // USANDO VARIAVEIS
+void EX00_7();                   // USANDO O TIPO BOOL
+void EX00_8();                   // MODIFICADORES DE TIPOS DE DADOS
+void EX00_9();                   // USANDO MAIS DE UMA VEZ UMA VARIAVEL
+void EX00_10();                  // MISTURANDO VARIAVEIS
 
 #endif // LEGENDARIO_H_INCLUDED

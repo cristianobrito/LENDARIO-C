@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1678543443 source:f:\c-lendario\legendario\main.c
+1678715011 source:f:\c-lendario\legendario\main.c
 	<stdio.h>
 	<stdlib.h>
+	<stdbool.h>
 
-1678543668 source:f:\c-lendario\legendario\legendario.c
+1678583711 source:f:\c-lendario\legendario\legendario.c
 	"LEGENDARIO.h"
 
 1678543846 f:\c-lendario\legendario\legendario.h

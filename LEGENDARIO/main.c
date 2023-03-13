@@ -14,7 +14,7 @@
 */
 #include <stdio.h>      // NECESSARIOS PARA AS FUNÇÕES FUNCIONAREM
 #include <stdlib.h>     // ARQUIVOS DA LIB PADRÃO USAM <> PARA IMPORTAR
-
+#include <stdbool.h>    // PARA USAR O TIPO BOOL (BOOLEANO)
 int main()
 {
     configuracao();     // CONFIGURACOES DA JANELA
@@ -24,5 +24,10 @@ int main()
     EX00_3();           // ENTENDENDO A FUNÇÃO PUTS
     EX00_4();           // EXIBINDO VALORES INT E FLOAT E FORMATANDO CARACTERES ESPECIAIS
     EX00_5();           // DEFININDO E USANDO UMA CONSTANTE
+    EX00_6();           // VARIAVEIS DECLARACAO E USO
+    EX00_7();           // TIPO BOOL
+    EX00_8();           // MODIFICADORES DE TIPOS DE DADOS
+    EX00_9();           // USANDO MAIS DE UMA VEZ VARIAVEIS
+    EX00_10();          // MISTURANDO VAIAVEIS
     return 0;
 }
