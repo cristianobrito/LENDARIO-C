@@ -3,7 +3,7 @@
 
 */
 #include "LEGENDARIO.h"      // ARQUIVOS CRIADOS POR NOS USAM ""
-
+#include <stdio.h>           // ADICIONADO POR CAUSA DO EX00_17
 #define VALOR 3 // DEFINE UMA CONSTANTE USADA NO EXEMPLO EX00_5
 
 typedef enum { F, T } boolean; // TIPO CRIADO PARA USAR NO EX00_7 (TIPO BOOL)
@@ -157,5 +157,95 @@ void EX00_10()
     puts("\n");
 }
 
+// -------------------------------------------------------------------
+
+void EX00_11()
+{
+    printf("=====================   EX00_11  =======================\n");
+    int c;
+
+    printf("espero um caractere:\n");
+    c=getchar();
+    printf("o caractere digitado foi '%c'.\n",c);
+    puts("\n");
+}
+// -------------------------------------------------------------------
+
+void EX00_12()
+{
+    printf("=====================   EX00_12  =======================\n");
+    int ch;
+
+    printf("PRESS <ENTER>\n");
+    getchar();
+    ch='H';
+    putchar(ch);
+    ch='i';
+    putchar(ch);
+    putchar('!');
+
+    puts("\n");
+}
+// -------------------------------------------------------------------
+
+void EX00_13()
+{
+    /* getchar e putchar trabalham com int mas aceitam caractere */
+    printf("=====================   EX00_13  =======================\n");
+    char a,b,c,d;
+
+    a='W';
+    b=a+24;
+    c=b+8;
+    d='\n';
+    printf("%c%c%c%c",a,b,c,d);
+    puts("\n");
+}
+// -------------------------------------------------------------------
+
+void EX00_14()
+{
+    printf("=====================   EX00_14  =======================\n");
+    char prompt[]="tecle enter para explodir:\n";
+    printf("%s",prompt);
+    getchar();
+    puts("\n");
+}
+// -------------------------------------------------------------------
+
+void EX00_15()
+{
+    printf("=====================   EX00_15  =======================\n");
+    char nome[15];
+    printf("digite seu nome: \n");
+    scanf("%s",nome);
+    printf("ola -> %s",nome);
+
+    puts("\n");
+}
+// -------------------------------------------------------------------
+
+void EX00_16()
+{
+    printf("=====================   EX00_16  =======================\n");
+    int fav;
+    printf("digite seu numero favorito: \n");
+    scanf("%d",&fav);
+    printf("seu numero favorito e = %d",fav);
+
+    puts("\n");
+}
+// -------------------------------------------------------------------
+
+void EX00_17()
+{
+    printf("=====================   EX00_17  =======================\n");
+    char nome[10];
+    printf("who are you: \n");
+    fgets(nome,10,stdin);
+    printf("ola forasteiro, %s, seja bem-vindo",nome);
+
+    puts("\n");
+}
 // continua no capitulo 7
 // pg 83 84

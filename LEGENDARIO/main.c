@@ -29,5 +29,13 @@ int main()
     EX00_8();           // MODIFICADORES DE TIPOS DE DADOS
     EX00_9();           // USANDO MAIS DE UMA VEZ VARIAVEIS
     EX00_10();          // MISTURANDO VAIAVEIS
+    EX00_11();          // LENDO CARACTERES GETCHAR
+    EX00_12();          // USANDO PUTCHAR
+    EX00_13();          // TRABALHANDO COM CARACTERES
+    EX00_14();          // COLOCANDO STRING EM ARRAY CHAR
+    EX00_15();          // USANDO SCANF();
+    EX00_16();          // SCANF(); COM ENDERECO DE MEMORIA &
+    EX00_17();          // LENDO STRING COM FGETS();
+
     return 0;
 }

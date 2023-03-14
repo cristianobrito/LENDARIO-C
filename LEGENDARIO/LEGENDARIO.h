@@ -18,5 +18,13 @@ void EX00_7();                   // USANDO O TIPO BOOL
 void EX00_8();                   // MODIFICADORES DE TIPOS DE DADOS
 void EX00_9();                   // USANDO MAIS DE UMA VEZ UMA VARIAVEL
 void EX00_10();                  // MISTURANDO VARIAVEIS
+void EX00_11();                  // LENDO CARACTERES COM GETCHAR();
+void EX00_12();                  // USANDO PUTCHAR
+void EX00_13();                  // TRABALHANDO COM CARACTERES
+void EX00_14();                  // COLOCANDO STRING EM UM ARRAY CHAR
+void EX00_15();                  // USANDO SCANF();
+void EX00_16();                  // PEGANDO O ENDERECO DE MEMORIA &
+void EX00_17();                  // LENDO STRING COM FGETS();
+
 
 #endif // LEGENDARIO_H_INCLUDED
