@@ -25,6 +25,9 @@ void EX00_14();                  // COLOCANDO STRING EM UM ARRAY CHAR
 void EX00_15();                  // USANDO SCANF();
 void EX00_16();                  // PEGANDO O ENDERECO DE MEMORIA &
 void EX00_17();                  // LENDO STRING COM FGETS();
+void EX00_18();                  // IF ELSE ELSE IF
+void EX00_19();                  // NUMERO SECRETO COM IF
+void EX00_20();                  // IF ELSE IF ELSE
 
 
 #endif // LEGENDARIO_H_INCLUDED

@@ -36,6 +36,9 @@ int main()
     EX00_15();          // USANDO SCANF();
     EX00_16();          // SCANF(); COM ENDERECO DE MEMORIA &
     EX00_17();          // LENDO STRING COM FGETS();
+    EX00_18();          // CONDICIONAIS
+    EX00_19();          // NUMERO SECRETO COM IF
+    EX00_20();          // IF ELSE IF ELSE
 
     return 0;
 }

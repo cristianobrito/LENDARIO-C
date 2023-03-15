@@ -4,8 +4,8 @@
 */
 #include "LEGENDARIO.h"      // ARQUIVOS CRIADOS POR NOS USAM ""
 #include <stdio.h>           // ADICIONADO POR CAUSA DO EX00_17
-#define VALOR 3 // DEFINE UMA CONSTANTE USADA NO EXEMPLO EX00_5
-
+#define VALOR 3              // DEFINE UMA CONSTANTE USADA NO EXEMPLO EX00_5
+#define SECRET 7             // DEFINE O VALOR USADO NO EX00_19
 typedef enum { F, T } boolean; // TIPO CRIADO PARA USAR NO EX00_7 (TIPO BOOL)
 
 void configuracao(void)
@@ -247,5 +247,80 @@ void EX00_17()
 
     puts("\n");
 }
-// continua no capitulo 7
-// pg 83 84
+
+/*  IF | ELSE | ELSE IF  */
+void EX00_18()
+{
+    printf("=====================   EX00_18  =======================\n");
+    int a,b;
+    printf("digite dois numeros: <tedle enter para cada um>\n");
+    scanf("%d %d",&a,&b);
+    if(a>b)
+    {
+        printf("A maior %d",a);
+    }else if(b>a)
+    {
+        printf("B maior %d",b);
+    }else{
+        printf("A e B iguais %d",a,b);
+    }
+    puts("\n");
+}
+
+// --------------------------------------------------------------------------
+void EX00_19()
+{
+    printf("=====================   EX00_19  =======================\n");
+    int palpite;
+    printf("advinhe o numero secreto: \n");
+    scanf("%d",&palpite);
+    if(palpite == SECRET)
+    {
+        printf("ACERTOU %d",SECRET);
+        puts("\n");
+        return(0);
+    }
+    if(palpite != SECRET)
+    {
+        printf("ERRORU!! %d",palpite);
+        puts("\n");
+        return(1);
+    }
+    puts("\n");
+}
+/*
+    LEMBRAR DOS OPERADORES
+    && AND AMBAS AS CONDIÇOES VERDADEIRAS
+    || OU  UMA OU OUTRA VERDADEIRA OU NENHUMA E VERDADEIRA
+    !  NOT O ITEM E FALSO
+
+*/
+// --------------------------------------------------------------------------
+void EX00_20()
+{
+    printf("=====================   EX00_20  =======================\n");
+    int a,b;
+    printf("digite dois numeros <tecle enter para cada um>:\n");
+    scanf("%d %d",&a,&b);
+    if(a>b && b<10)
+    {
+        printf("a > que b e b < que 10");
+        puts("\n");
+    }
+    if(b>a || b>10)
+    {
+        printf("b e >a >10");
+        puts("\n");
+    }
+    if(a != b)
+    {
+        printf("nao sao iguais");
+        puts("\n");
+    }else{
+        printf("digitou letra ou zero:");
+        puts("\n");
+    }
+
+    puts("\n");
+}
+/* pagina 108 parada*/
