@@ -28,6 +28,9 @@ void EX00_17();                  // LENDO STRING COM FGETS();
 void EX00_18();                  // IF ELSE ELSE IF
 void EX00_19();                  // NUMERO SECRETO COM IF
 void EX00_20();                  // IF ELSE IF ELSE
+void EX00_21();                  // SWITCH CASE
+void EX00_22();                  // SWITCH CASE SEM BREAK
+void EX00_23();                  // ESTRUTURA DE DECISAO DIFERENTE
 
 
 #endif // LEGENDARIO_H_INCLUDED

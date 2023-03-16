@@ -219,7 +219,7 @@ void EX00_15()
     char nome[15];
     printf("digite seu nome: \n");
     scanf("%s",nome);
-    printf("ola -> %s",nome);
+    printf("ola %s",nome);
 
     puts("\n");
 }
@@ -312,7 +312,7 @@ void EX00_20()
         printf("b e >a >10");
         puts("\n");
     }
-    if(a != b)
+    if(a != b)               // NAO IGUAL
     {
         printf("nao sao iguais");
         puts("\n");
@@ -323,4 +323,72 @@ void EX00_20()
 
     puts("\n");
 }
-/* pagina 108 parada*/
+
+/* MULTIPLA ESCOLHA SWITCH CASE */
+void EX00_21()
+{
+    printf("=====================   EX00_21  =======================\n");
+    int code;
+    printf("escolha sua opcao: (1-3)");
+    scanf("%d",&code);
+    switch(code)
+    {
+    case 1:
+        printf("escolha 1 ");
+        break;
+    case 2:
+        printf("escolha 2 ");
+        break;
+    case 3:
+        printf("escolha 3 ");
+        break;
+    default:
+        puts("nada foi escolhido\n");
+    }
+    puts("\n");
+
+}
+// ------------------------------------------------------------------------------
+void EX00_22()
+{
+    printf("=====================   EX00_22  =======================\n");
+    char choice;
+    puts("meal plans:");
+    puts("A - Breakfast, lunch, and dinner");
+    puts("B - Lunch and Dinner only");
+    puts("C - Dinner only");
+    printf("sua escolha: ");
+    scanf("%c",&choice);
+    printf("voce escolheu: \n");
+    switch(choice)
+    {
+    case 'A':
+        printf("Breakfast ");
+    case 'B':
+        printf("Lunch ");
+    case 'C':
+        printf("Dinner ");
+    default:
+        puts("nada foi escolhido\n");
+    }
+    puts("\n");
+
+}
+// -----------------------------------------------------------------------
+void EX00_23()
+{
+    printf("=====================   EX00_23  =======================\n");
+    int a,b,larger;          // LARGER (MAIOR)
+    printf("entre com um valor A: ");
+    scanf("%d",&a);
+    printf("entre com o segundo valor B: ");
+    scanf("%d",&b);
+
+    /* ? É CONHECIDO COMO OPERADOR TERNARIO */
+    /* RESULT = COMPARACAO ? IF_TRUE : IF_FALSE*/
+    larger= (a>b) ? a : b;
+    printf("valor de %d e larger.\n",larger);
+    puts("\n");
+
+}
+/* CONTINUA 113 114 LOOPS */

@@ -39,6 +39,9 @@ int main()
     EX00_18();          // CONDICIONAIS
     EX00_19();          // NUMERO SECRETO COM IF
     EX00_20();          // IF ELSE IF ELSE
+    EX00_21();          // SWITCH CASE
+    EX00_22();          // SWITCH CASE SEM BREAK
+    EX00_23();          // OPERADOR TERNARIO
 
     return 0;
 }
