@@ -293,7 +293,7 @@ void EX00_19()
     && AND AMBAS AS CONDIÇOES VERDADEIRAS
     || OU  UMA OU OUTRA VERDADEIRA OU NENHUMA E VERDADEIRA
     !  NOT O ITEM E FALSO
-
+    !  USADO PARA ANTES DE UMA CONDICAO PARA TORNALO FALSO E SE FOR FALSO TORNAR EM VERDADEIRO
 */
 // --------------------------------------------------------------------------
 void EX00_20()
@@ -384,11 +384,78 @@ void EX00_23()
     printf("entre com o segundo valor B: ");
     scanf("%d",&b);
 
-    /* ? É CONHECIDO COMO OPERADOR TERNARIO */
-    /* RESULT = COMPARACAO ? IF_TRUE : IF_FALSE*/
+    /*
+       ? É CONHECIDO COMO OPERADOR TERNARIO
+       RESULT = COMPARACAO ? IF_TRUE : IF_FALSE
+       COMPARA A e B SE A FOR MAIOR VAI SER TRUE E SERA EXECUTADO A PARTE TRUE
+       SE B FOR MAIOR A SERA FALSE E SERA EXECUTADO A PARTE DE B
+       QUALQUER UMA DAS DUAS QUE SEJE TRUE SERA ARMAZENADA EM LARGER
+       ESTUDAR OPERADOR TERNARIO
+    */
+
     larger= (a>b) ? a : b;
     printf("valor de %d e larger.\n",larger);
     puts("\n");
 
 }
-/* CONTINUA 113 114 LOOPS */
+// -----------------------------------------------------------------------
+/* LOOPS */
+
+void EX00_24()
+{
+    printf("=====================   EX00_24  =======================\n");
+    int x=0;
+    for(x=0;x<10;x++)
+    {
+        printf("%d",x);
+    }
+    puts("\n");
+
+}
+//-----------------------------------------------------------------------
+void EX00_25()
+{
+    printf("=====================   EX00_25  =======================\n");
+    int x,alpha;
+    for(alpha='A';alpha<='G';alpha++)
+    {
+        for(x=1;x<7;x++)
+        {
+            printf("%c%d\t", alpha,x);
+        }
+        putchar("\n");
+    }
+
+}
+//-----------------------------------------------------------------------
+
+void EX00_26()
+{
+    puts("\n");
+    printf("=====================   EX00_26  =======================\n");
+    int x=0;
+    while(x<10)
+    {
+        printf("%d",x);
+        x=x+1;
+    }
+    puts("\n");
+}
+
+//-----------------------------------------------------------------------
+
+void EX00_27()
+{
+    puts("\n");
+    printf("=====================   EX00_27  =======================\n");
+    int x=0;
+
+    do{
+        printf("%d\t",x);
+        x=x+2;
+    }while(x<20);
+
+    puts("\n");
+}
+
+/* FUNCOES 129 PG */

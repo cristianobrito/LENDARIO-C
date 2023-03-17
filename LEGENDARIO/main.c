@@ -42,6 +42,10 @@ int main()
     EX00_21();          // SWITCH CASE
     EX00_22();          // SWITCH CASE SEM BREAK
     EX00_23();          // OPERADOR TERNARIO
+    EX00_24();          // LOOP FOR
+    EX00_25();          // FOR ANINHADO
+    EX00_26();          // WHILE
+    EX00_27();          // DO WHILE
 
     return 0;
 }
