@@ -46,6 +46,7 @@ int main()
     EX00_25();          // FOR ANINHADO
     EX00_26();          // WHILE
     EX00_27();          // DO WHILE
+    EX00_28();          // FUNCOES
 
     return 0;
 }

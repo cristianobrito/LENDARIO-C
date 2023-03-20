@@ -2,11 +2,17 @@
     funcoes ou modulos
 
 */
-#include "LEGENDARIO.h"      // ARQUIVOS CRIADOS POR NOS USAM ""
-#include <stdio.h>           // ADICIONADO POR CAUSA DO EX00_17
-#define VALOR 3              // DEFINE UMA CONSTANTE USADA NO EXEMPLO EX00_5
-#define SECRET 7             // DEFINE O VALOR USADO NO EX00_19
+#include "LEGENDARIO.h"        // ARQUIVOS CRIADOS POR NOS USAM ""
+#include <stdio.h>             // ADICIONADO POR CAUSA DO EX00_17
+#define VALOR 3                // DEFINE UMA CONSTANTE USADA NO EXEMPLO EX00_5
+#define SECRET 7               // DEFINE O VALOR USADO NO EX00_19
 typedef enum { F, T } boolean; // TIPO CRIADO PARA USAR NO EX00_7 (TIPO BOOL)
+
+int somar(int a, int b);       /* FUNCAO USADA NO EX00_28 | prototipo da funcao ou assinatura */
+int somar(int a, int b)
+{
+    return a+b;
+}
 
 void configuracao(void)
 {
@@ -457,5 +463,17 @@ void EX00_27()
 
     puts("\n");
 }
+/*----------------------------------------------------------*/
 
-/* FUNCOES 129 PG */
+void EX00_28()
+{
+    int a,b,c;
+    printf("=====================   EX00_28  =======================\n");
+    printf("JA SOU UMA FUNCAO E CHAMO OUTRA\ndigite sua soma: \n");
+    getchar();
+    scanf("%d %d\n",&a,&b);
+    /* a funcao somar e global */
+    c=somar(a, b);
+    printf("soma: %d", c);
+}
+/* continua 130 */

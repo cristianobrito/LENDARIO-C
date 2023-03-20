@@ -35,6 +35,7 @@ void EX00_24();                  // LOOP FOR
 void EX00_25();                  // FOR ANINHADO
 void EX00_26();                  // WHILE
 void EX00_27();                  // DO WHILE
+void EX00_28();                  // FUNCOES E CHAMADA DE OUTRAS FUNCOES
 
 
 #endif // LEGENDARIO_H_INCLUDED
