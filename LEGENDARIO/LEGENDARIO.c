@@ -477,3 +477,5 @@ void EX00_28()
     printf("soma: %d", c);
 }
 /* continua 130 */
+/* nao escrevi alergia atacada demais
+   outro dia continuo */
