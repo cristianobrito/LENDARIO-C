@@ -1,0 +1,8 @@
+	BEM VINDOS AO LISTÃO caça 
+		wordlist:
+nano
+cristiano
+joyce
+akilles
+carlos
+edson

@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1679316470 source:f:\c-lendario\funcoes\main.c
+1679524294 source:f:\c-lendario\funcoes\main.c
 	<stdio.h>
 	<stdlib.h>
+	<time.h>
+	<windows.h>
 

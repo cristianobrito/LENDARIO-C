@@ -1,36 +1,43 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#include <windows.h>
+#include <locale.h>
 
-int somar(int a, int b) /* FUNCOES QUE RETORNAM */
-{
-  return a+b;
-}
-
-int a,b,c; /* VARIAVEIS GLOBAIS */
+void ler();                         /* ASSINATURA OU PROTOTIPO       */
 
 int main()
 {
-
-  printf("digite sua soma\nentre com os numeros\n");
-  scanf("%d %d",&a,&b);
-  c=somar(a,b);  /* CHAMADA DA FUNCAO */
-  printf("soma: %d\n",c);
-  if(c==24)
+  setlocale(LC_ALL, "Portuguese");  /* USANDO A ACENTUAÇÃO           */
+  FILE *handle;
+  handle=fopen("A1.txt","w");
+  if(handle==NULL)
   {
-      puts("\nhummm boiola!!\n");
+      puts("error!");
+      exit(1);
   }
-  else if(c<10)
-  {
-      puts("ninho\n");
-  }
-  else{
-    puts("soi a hombre cabrom!!");
-  }
-  int i=0;
-  while(c<5)
-  {
-      printf("ola amigo: %d\n",c);
-      c++;
-  }
+  fprintf(handle,"\tBEM VINDOS AO LISTÃO caça \n");
+  fprintf(handle,"\t\twordlist:\n");
+  fprintf(handle,"nano\ncristiano\njoyce\nakilles\ncarlos\nedson\n");
+  fclose(handle);
+  Sleep(500);
+  ler();
   return 0;
+}
+
+void ler()
+{
+    FILE *handle;
+    char buffer[1024];
+    handle=fopen("A1.txt","r");
+    if(handle==NULL)
+    {
+       puts("error");
+       exit(1);
+    }
+    while(fgets(buffer,1024,handle))
+    {
+        printf("%s",buffer);
+    }
+    fclose(handle);
 }
