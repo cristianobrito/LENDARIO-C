@@ -48,19 +48,24 @@ void lerBin()
     time_t t;
     time(&t);
     FILE *handle;                    /* CRIA A VARIAVEL DO TIPO ARQUIVO     */
-    static int score;                /* GUARDA A VARIAVEL ATE O FIM DO PROG */
-    handle=fopen("scores.dat","a");  /* HANDLE E UM PONTEIRO                */
+    int score[5];                    /* GUARDA A VARIAVEL ATE O FIM DO PROG */
+    int i;
+    handle=fopen("scores.dat","w");  /* HANDLE E UM PONTEIRO                */
     if(!handle)                      /* OPERADOR DE NEGACAO NOT             */
     {
         puts("error\n");
-        exit(1);                     /* SAI SE DER ERRO                 */
+        exit(1);                     /* SAI SE DER ERRO                     */
     }
-    printf("digite seu placar:\n");
-    scanf("%d",&score);              /* PEGA O ENDERECO DOS PONTOS      */
+    for(i=0;i<5;i++)
+    {
+      printf("digite seu placar:\n");
+      scanf("%d",&score);            /* PEGA O ENDERECO DOS PONTOS          */
+
+    }
     //fprintf(handle,"PONTOS: %d",score);
-    fwrite(&score,sizeof(int),1,handle);
+    fwrite(&score,sizeof(int),5,handle);
     fprintf(handle,"\n%s",ctime(&t));
-    fclose(handle);                  /* FECHA O ARQUIVO                 */
+    fclose(handle);                  /* FECHA O ARQUIVO                     */
     puts("score salvo!!\n");
 }
 
@@ -68,7 +73,7 @@ void lerBin()
 void VerificaBin()
 {
     FILE *handle;                    /* CRIA A VARIAVEL DO TIPO ARQUIVO */
-    static int score[5];             /* TYPE INT                        */
+    int score[5];                    /* TYPE INT                        */
     int x;
 
     handle=fopen("scores.dat","r");  /* HANDLE E UM PONTEIRO            */
