@@ -20,7 +20,7 @@ int main()
   }
   fprintf(handle,"\tBEM VINDOS AO LISTÃO caça \n");
   fprintf(handle,"\t\twordlist:\n");
-  fprintf(handle,"nano\ncristiano\njoyce\nakilles\ncarlos\nedson\n");
+  fprintf(handle,"nano\ncristiano\njoyce\nakilles\ncarlos\nedson\ncris\nmendes\n");
   fprintf(handle,"\n \t%s", ctime(&t));
   fclose(handle);
   Sleep(500);
