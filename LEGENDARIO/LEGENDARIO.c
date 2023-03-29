@@ -475,7 +475,18 @@ void EX00_28()
     /* a funcao somar e global */
     c=somar(a, b);
     printf("soma: %d", c);
+    puts("\n");
 }
-/* continua 130 */
-/* nao escrevi alergia atacada demais
-   outro dia continuo */
+
+void EX00_29()
+{
+    printf("=====================   EX00_29  =======================\n");
+    int i,x;
+    int a[10];
+
+    for(i=0;i<10;i++)
+    {
+      printf("%d = a[%d]\n",i, i);
+    }
+
+}

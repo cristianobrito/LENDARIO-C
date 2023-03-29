@@ -36,6 +36,6 @@ void EX00_25();                  // FOR ANINHADO
 void EX00_26();                  // WHILE
 void EX00_27();                  // DO WHILE
 void EX00_28();                  // FUNCOES E CHAMADA DE OUTRAS FUNCOES
-
+void EX00_29();                  // ARRAYS
 
 #endif // LEGENDARIO_H_INCLUDED

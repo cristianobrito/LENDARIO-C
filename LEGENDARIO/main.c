@@ -47,6 +47,6 @@ int main()
     EX00_26();          // WHILE
     EX00_27();          // DO WHILE
     EX00_28();          // FUNCOES
-
+    EX00_29();          // ARRAYS BASICO
     return 0;
 }
