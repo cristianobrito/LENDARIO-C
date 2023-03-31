@@ -48,5 +48,6 @@ int main()
     EX00_27();          // DO WHILE
     EX00_28();          // FUNCOES
     EX00_29();          // ARRAYS BASICO
+    EX00_30();          // ARRAYS
     return 0;
 }
