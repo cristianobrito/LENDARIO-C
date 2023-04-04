@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1680269293 source:f:\c-lendario\legendario\main.c
+1680610084 source:f:\c-lendario\legendario\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>

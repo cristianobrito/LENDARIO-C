@@ -503,3 +503,21 @@ void EX00_30()
     printf("31/03/2023");
     puts("\n");
 }
+
+
+void EX00_31()
+{
+    int Matrix[2][5] = {20,30,40,50,60,70,80,90,100,110};
+    int i,x,y;
+
+    printf("\nMOSTRA UMA MATRIX DE 2 LINHAS E 5 COLUNAS 2X5\n");
+    for(x=0;x<2;x++)
+    {
+      for(y=0;y<5;y++)
+      {
+          printf("\t%d", Matrix[x][y]);
+      }
+      printf("\n");
+    }
+
+}
