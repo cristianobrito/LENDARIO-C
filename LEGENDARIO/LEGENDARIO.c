@@ -521,3 +521,23 @@ void EX00_31()
     }
 
 }
+
+
+void EX00_32()
+{
+    int i,y,a[4][2]={40,50,60,70,
+                     80,90,100,110};
+
+    for(i=0;i<4;i++)
+    {
+        for(y=0;y<2;y++)
+        {
+          printf("%3d", a[i][y]);
+        }
+        printf("\n");
+    }
+    puts("\n");
+
+    printf("encerrando por aqui\n");
+
+}

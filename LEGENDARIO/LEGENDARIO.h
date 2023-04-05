@@ -39,5 +39,6 @@ void EX00_28();                  // FUNCOES E CHAMADA DE OUTRAS FUNCOES
 void EX00_29();                  // ARRAYS
 void EX00_30();                  // MAIS ARRAYS
 void EX00_31();
+void EX00_32();
 
 #endif // LEGENDARIO_H_INCLUDED

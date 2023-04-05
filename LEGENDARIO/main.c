@@ -50,5 +50,6 @@ int main()
     EX00_29();          // ARRAYS BASICO
     EX00_30();          // ARRAYS
     EX00_31();
+    EX00_32();
     return 0;
 }
