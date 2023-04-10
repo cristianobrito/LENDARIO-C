@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1679594998 source:f:\c-lendario\ler_arq\main.c
-	<stdio.h>
-	<stdlib.h>
-	<windows.h>
-	<time.h>
-
