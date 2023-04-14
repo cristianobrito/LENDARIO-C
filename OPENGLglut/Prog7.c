@@ -1,3 +1,4 @@
+
 #include <GL/glu.h>
 #include <GL/glut.h>
 
@@ -9,7 +10,7 @@ void MyInit()
 void Draw()
 {
   glClear(GL_COLOR_BUFFER_BIT);// limpando o buffer do background
-  glBegin(GL_LINES);          // desenhando points
+  glBegin(GL_LINE_LOOP);          // desenhando points
     glVertex2d(-0.5, 0.5);     // coordenadas cartesianas
     glVertex2d( 0.5, 0.5);
     glVertex2d( 0.5,-0.5);
