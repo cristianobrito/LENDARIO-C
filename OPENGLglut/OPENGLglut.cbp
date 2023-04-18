@@ -42,7 +42,7 @@
 			<Add library="gdi32" />
 			<Add directory="C:/Program Files/CodeBlocks/MinGW/x86_64-w64-mingw32/lib" />
 		</Linker>
-		<Unit filename="Prog6.c">
+		<Unit filename="Prog8.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>
